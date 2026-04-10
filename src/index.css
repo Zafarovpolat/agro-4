@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-sans: 'Roboto', sans-serif;
+    --color-primary: #228B22;
+    --color-primary-foreground: #FFFFFF;
+    --color-accent: #FF8C00;
+    --color-accent-foreground: #FFFFFF;
+    --color-background: #F8F8F5;
+    --color-foreground: #3E2723;
+    --color-card: #FFFFFF;
+    --color-card-foreground: #3E2723;
+    --color-border: #E5E7EB;
+    --color-input: #E5E7EB;
+    --color-ring: #228B22;
+    
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+}
+
+:root {
+    --background: #F8F8F5;
+    --foreground: #3E2723;
+    --card: #FFFFFF;
+    --card-foreground: #3E2723;
+    --popover: #FFFFFF;
+    --popover-foreground: #3E2723;
+    --primary: #228B22;
+    --primary-foreground: #FFFFFF;
+    --secondary: #F3F4F6;
+    --secondary-foreground: #3E2723;
+    --muted: #F3F4F6;
+    --muted-foreground: #6B7280;
+    --accent: #FF8C00;
+    --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
+    --border: #E5E7EB;
+    --input: #E5E7EB;
+    --ring: #228B22;
+    --radius: 4px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
