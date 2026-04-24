@@ -126,11 +126,7 @@ export default function App() {
       <header className={`sticky top-0 z-50 bg-white shadow-sm transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">А</div>
-            <div className="flex flex-col">
-              <span className="font-bold text-xl leading-none text-primary">АгроТех</span>
-              <span className="text-[10px] uppercase tracking-widest opacity-60">Сельхозтехника</span>
-            </div>
+            <img src="/logo.svg" alt="АгроТех" className="h-12" />
           </div>
 
           <nav className="hidden lg:flex items-center gap-6">
